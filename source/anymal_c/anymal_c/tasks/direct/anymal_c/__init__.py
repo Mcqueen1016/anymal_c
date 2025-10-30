@@ -14,10 +14,10 @@ from . import agents
 
 gym.register(
     id="Template-Anymal-C-Direct-v0",
-    entry_point=f"{__name__}.anymal_c_env:AnymalCEnv",
+    entry_point=f"{__name__}.anymal_c_env:IsaacLabTutorialEnv",
     disable_env_checker=True,
     kwargs={
-        "env_cfg_entry_point": f"{__name__}.anymal_c_env_cfg:AnymalCEnvCfg",
+        "env_cfg_entry_point": f"{__name__}.anymal_c_env_cfg:IsaacLabTutorialEnvCfg",
         "rsl_rl_cfg_entry_point": f"{agents.__name__}.rsl_rl_ppo_cfg:PPORunnerCfg",
         "skrl_cfg_entry_point": f"{agents.__name__}:skrl_ppo_cfg.yaml",
     },
