@@ -11,6 +11,10 @@ ANYMAL_C_CONFIG = ArticulationCfg(
     ),
     
     actuators={
-        "motor_acts": ImplicitActuatorCfg(joint_names_expr=[".*"], damping=None, stiffness=None)
+        "motor_acts": ImplicitActuatorCfg(
+            joint_names_expr=[".*"],
+            stiffness=40.0,
+            damping=2.0,
+        )
     },
 )
